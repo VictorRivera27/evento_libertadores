@@ -1,0 +1,39 @@
+@use 'variaveis';
+@use 'hero';
+@use 'components/infos-bar';
+
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../../assets/fonts/Ubuntu-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../../assets/fonts/Ubuntu-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+    color: variaveis.$textColorPrincipal;
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1024px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 640px) {
+        max-width: 90%;
+    }
+}
