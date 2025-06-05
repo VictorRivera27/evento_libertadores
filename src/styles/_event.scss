@@ -1,0 +1,46 @@
+@use 'variaveis';
+
+.event {
+    background-color: variaveis.$textColorSecundario;
+    padding: 60px 0;
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__details {
+        &__title {
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+
+    &__image {
+        max-width: 360px;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            display: block;
+        }
+
+        &__details {
+            margin-bottom: 16px;
+        }
+
+        &__image {
+            max-width: 100%;
+        }
+    }
+}

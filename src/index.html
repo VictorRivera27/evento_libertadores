@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/conmebol_logo.png" alt="Libertadores Logo">
-            <p class="hero__text">A maior final do continente sul-americano começa em 12d 8h 45m 20s</p>
+            <p class="hero__text">
+                A maior final do continente sul-americano começa em <span id="contador"></span>
+            </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
@@ -23,14 +26,51 @@
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Acontece no Dia</b>
-                        29/11/2025 às 17h
+                        29 de nov. de 2025
                     </li>
                 </ul>
-                <a href="">Garanta seu ingresso</a>
+                <a href="" class="button button--primary">Garanta seu ingresso</a>
             </div>
         </div>
     </header>
+    <section class="event">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">A Jornada até a Final</h2>
+                <p class="event__details__description">Desde as fases de grupos até os duelos eletrizantes do mata-mata, a CONMEBOL Libertadores 2025 foi palco de partidas inesquecíveis, viradas históricas e emoções intensas. Dois gigantes do continente superaram todos os desafios e agora se enfrentam em busca do título mais desejado da América do Sul. A jornada foi longa, mas a Glória Eterna está logo ali.</p>
+            </div>
+            <img class="event__image" src="/src/images/capa_taca_libertadores.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">O Palco da Decisão</h2>
+                <p class="event__details__description">A final da Libertadores acontecerá em um estádio icônico, preparado para receber torcedores de todo o continente. Arquibancadas lotadas, atmosfera eletrizante e uma energia única marcam esse momento histórico. Cada detalhe foi pensado para fazer desta final uma experiência inesquecível tanto para quem assiste no estádio quanto para quem acompanha de casa.</p>
+            </div>
+            <img class="event__image" src="/src/images/capa_taca_libertadores.jpg" alt="">
+        </div>
+    </section>
+    <section class="event">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">A Taça que Carrega um Continente</h2>
+                <p class="event__details__description">A taça da CONMEBOL Libertadores é muito mais do que um troféu — é um símbolo de superação, garra e tradição. Criada em 1960, ela já passou pelas mãos dos maiores clubes da América do Sul e representa o sonho máximo de qualquer jogador do continente. Seu brilho reflete histórias de paixão, lutas memoráveis e finais que entraram para a eternidade. Levantá-la é tocar a Glória Eterna.</p>
+            </div>
+            <img class="event__image" src="/src/images/capa_taca_libertadores.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Torcidas que Fazem o Continente Tremer</h2>
+                <p class="event__details__description">Na América do Sul, o futebol é mais do que um esporte — é parte da identidade. As torcidas vivem a Libertadores como uma missão: com cantos que ecoam por 90 minutos, bandeiras que pintam os estádios e uma paixão que atravessa gerações. De Buenos Aires a Medellín, de Montevidéu a São Paulo, cada torcida leva sua cultura para dentro do estádio e transforma cada jogo em um espetáculo à parte.</p>
+            </div>
+            <img class="event__image" src="/src/images/capa_taca_libertadores.jpg" alt="">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

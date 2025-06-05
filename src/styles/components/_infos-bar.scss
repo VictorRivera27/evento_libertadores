@@ -4,6 +4,7 @@
     padding: 16px 24px;
     background-color: variaveis.$textColorSecundario;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     &__infos {
@@ -22,7 +23,7 @@
 
     @media (max-width: 1024px) {
         &__infos {
-            gap: 16px;
+            gap: 20px;
         }
     }
 

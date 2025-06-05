@@ -36,6 +36,11 @@
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
+
+        span {
+            text-transform: lowercase;
+            color: variaveis.$textColorDestaque;
+        }
     }
 
     @media (max-width: 640px) {
